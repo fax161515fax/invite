@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<html lang="zh-CN"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>邀请函 · 第八届地理文化周决赛 | 天文地理爱好者协会</title>
@@ -194,7 +193,7 @@
 </style>
 </head>
 <body data-theme="ink">
-<canvas id="stars"></canvas>
+<canvas id="stars" width="2471" height="1403"></canvas>
 <div class="grain"></div>
 
 <!-- ===== 视图：封面 ===== -->
@@ -215,24 +214,21 @@
 
 <!-- ===== 视图：邀请正文 ===== -->
 <main id="letter">
-  <section class="reveal">
+  <section class="reveal in">
     <div class="salute" id="saluteTxt">尊敬的老师：</div>
-    <div class="letter-body" id="bodyTxt"><p class="indent">您好！</p>
-<p class="indent">第八届地理文化周决赛即将举行。地理之学，在山川之间，也在少年眼底的星光里。</p>
-<p class="indent">本届决赛由天文地理爱好者协会承办，涵盖诗朗诵、地理知识抢答、话剧展演、PPT 演讲与合唱等环节。我们谨代表全体同学，诚挚邀请您莅临现场，担任评委，为参赛选手打分、点评，与我们一同见证这场关于山河与热爱的盛会。</p>
-<p class="indent">期待您的到来。</p></div>
+    <div class="letter-body" id="bodyTxt"><p class="indent">您好！</p><p class="indent">第八届地理文化周决赛即将举行。地理之学，在山川之间，也在少年眼底的星光里。</p><p class="indent">本届决赛由天文地理爱好者协会承办，涵盖诗朗诵、地理知识抢答、话剧展演、PPT 演讲与合唱等环节。我们谨代表全体同学，诚挚邀请您莅临现场，担任评委，为参赛选手打分、点评，与我们一同见证这场关于山河与热爱的盛会。</p><p class="indent">期待您的到来。</p></div>
   </section>
 
-  <section class="reveal">
+  <section class="reveal in">
     <div class="sec-title">时间 · 地点</div>
     <dl class="meta-list">
       <div class="meta-row">
         <dt>时　间</dt>
-        <dd><span id="timeMain">12 月 5 日（周六）18:30 — 21:00</span><small id="timeNote">请于 18:00 前签到入场</small></dd>
+        <dd><span id="timeMain">12 月 5 日（周六）18:00 — 21:00</span><small id="timeNote">请于 18:00 签到入场</small></dd>
       </div>
       <div class="meta-row">
         <dt>地　点</dt>
-        <dd><span id="placeMain">逸夫楼报告厅</span><small id="placeNote">请从逸夫楼正门进入，报告厅位于一层</small></dd>
+        <dd><span id="placeMain">逸夫楼报告厅</span><small id="placeNote"></small></dd>
       </div>
       <div class="meta-row">
         <dt>联　系</dt>
@@ -244,7 +240,7 @@
 
   <section class="reveal">
     <div class="sec-title">当晚流程</div>
-    <div class="timeline" id="timeline"><div class="tl-item"><time>18:30</time><p>开场、介绍评委嘉宾<small>主持人宣布活动开始</small></p></div><div class="tl-item"><time>18:37</time><p>诗朗诵《星月揽天地，山河耀中华》<small>10 分钟</small></p></div><div class="tl-item"><time>18:52</time><p>地理知识抢答赛<small>两支队伍同场抢答</small></p></div><div class="tl-item"><time>19:42</time><p>话剧《领养日》<small>20 分钟</small></p></div><div class="tl-item"><time>20:07</time><p>PPT 演讲决赛<small>5 位选手，每人 5 分钟</small></p></div><div class="tl-item"><time>20:32</time><p>大合唱《夜空中最亮的星》<small>8 分钟</small></p></div><div class="tl-item"><time>20:40</time><p>评委点评与颁奖<small>合影留念</small></p></div></div>
+    <div class="timeline" id="timeline"><div class="tl-item"><time>18:30</time><p>开场、介绍评委嘉宾<small>主持人宣布活动开始</small></p></div><div class="tl-item"><time>18:37</time><p>诗朗诵《星月揽天地，山河耀中华》<small>10 分钟</small></p></div><div class="tl-item"><time>18:52</time><p>地理知识抢答赛<small>两支队伍同场抢答</small></p></div><div class="tl-item"><time>19:42</time><p>话剧《领养日》<small>20 分钟</small></p></div><div class="tl-item"><time>20:07</time><p>PPT 演讲决赛<small>5 位选手，每人 5 分钟</small></p></div><div class="tl-item"><time>20:32</time><p>大合唱《夜空中最亮的星》<small>8 分钟</small></p></div><div class="tl-item"><time>20:40</time><p>评委点评与颁奖<small>合影留念</small></p></div><div class="tl-item"><time>21:00</time><p>结束退场</p></div></div>
   </section>
 
   <section class="reveal reply">
@@ -270,7 +266,7 @@
 
 <!-- ===== 设计面板 ===== -->
 <button class="fab" id="fabBtn" aria-label="打开设计面板" type="button">设计</button>
-<div class="panel" id="panel">
+<div class="panel open" id="panel">
   <div class="panel-head">
     <h2>邀请函设计</h2>
     <button id="closePanel" type="button">完成</button>
@@ -296,17 +292,17 @@
 
   <div class="group">
     <h3>时间 · 地点</h3>
-    <div class="field"><label for="i_time">时间（如 11 月 28 日（周六）18:30 — 21:00）</label><input id="i_time" value="12 月 5 日（周六）18:30 — 21:00"></div>
-    <div class="field"><label for="i_timeNote">时间补充说明</label><input id="i_timeNote" value="请于 18:00 前签到入场"></div>
+    <div class="field"><label for="i_time">时间（如 11 月 28 日（周六）18:30 — 21:00）</label><input id="i_time" value="12 月 5 日（周六）18:00 — 21:00"></div>
+    <div class="field"><label for="i_timeNote">时间补充说明</label><input id="i_timeNote" value="请于 18:00 签到入场"></div>
     <div class="field"><label for="i_place">地点</label><input id="i_place" value="逸夫楼报告厅"></div>
-    <div class="field"><label for="i_placeNote">地点补充说明</label><input id="i_placeNote" value="请从逸夫楼正门进入，报告厅位于一层"></div>
+    <div class="field"><label for="i_placeNote">地点补充说明</label><input id="i_placeNote" value=""></div>
     <div class="field"><label for="i_contact">联系信息</label><input id="i_contact" value="天文地理爱好者协会"></div>
     <div class="field"><label for="i_contactNote">联系补充说明</label><input id="i_contactNote" value="如需调整时间，请随时回复告知"></div>
   </div>
 
   <div class="group">
     <h3>当晚流程</h3>
-    <div class="flow-edit" id="flowEdit"></div>
+    <div class="flow-edit" id="flowEdit"><div class="item" data-i="0"><div class="row2"><div class="field"><label>时间</label><input data-k="t" value="18:30"></div><div class="field"><label>环节名称</label><input data-k="name" value="开场、介绍评委嘉宾"></div></div><div class="row2"><div class="field"><label>补充说明</label><input data-k="sub" value="主持人宣布活动开始"></div><div class="field" style="flex:0 0 68px;display:flex;align-items:flex-end"><button class="del" data-del="0" type="button">删除</button></div></div></div><div class="item" data-i="1"><div class="row2"><div class="field"><label>时间</label><input data-k="t" value="18:37"></div><div class="field"><label>环节名称</label><input data-k="name" value="诗朗诵《星月揽天地，山河耀中华》"></div></div><div class="row2"><div class="field"><label>补充说明</label><input data-k="sub" value="10 分钟"></div><div class="field" style="flex:0 0 68px;display:flex;align-items:flex-end"><button class="del" data-del="1" type="button">删除</button></div></div></div><div class="item" data-i="2"><div class="row2"><div class="field"><label>时间</label><input data-k="t" value="18:52"></div><div class="field"><label>环节名称</label><input data-k="name" value="地理知识抢答赛"></div></div><div class="row2"><div class="field"><label>补充说明</label><input data-k="sub" value="两支队伍同场抢答"></div><div class="field" style="flex:0 0 68px;display:flex;align-items:flex-end"><button class="del" data-del="2" type="button">删除</button></div></div></div><div class="item" data-i="3"><div class="row2"><div class="field"><label>时间</label><input data-k="t" value="19:42"></div><div class="field"><label>环节名称</label><input data-k="name" value="话剧《领养日》"></div></div><div class="row2"><div class="field"><label>补充说明</label><input data-k="sub" value="20 分钟"></div><div class="field" style="flex:0 0 68px;display:flex;align-items:flex-end"><button class="del" data-del="3" type="button">删除</button></div></div></div><div class="item" data-i="4"><div class="row2"><div class="field"><label>时间</label><input data-k="t" value="20:07"></div><div class="field"><label>环节名称</label><input data-k="name" value="PPT 演讲决赛"></div></div><div class="row2"><div class="field"><label>补充说明</label><input data-k="sub" value="5 位选手，每人 5 分钟"></div><div class="field" style="flex:0 0 68px;display:flex;align-items:flex-end"><button class="del" data-del="4" type="button">删除</button></div></div></div><div class="item" data-i="5"><div class="row2"><div class="field"><label>时间</label><input data-k="t" value="20:32"></div><div class="field"><label>环节名称</label><input data-k="name" value="大合唱《夜空中最亮的星》"></div></div><div class="row2"><div class="field"><label>补充说明</label><input data-k="sub" value="8 分钟"></div><div class="field" style="flex:0 0 68px;display:flex;align-items:flex-end"><button class="del" data-del="5" type="button">删除</button></div></div></div><div class="item" data-i="6"><div class="row2"><div class="field"><label>时间</label><input data-k="t" value="20:40"></div><div class="field"><label>环节名称</label><input data-k="name" value="评委点评与颁奖"></div></div><div class="row2"><div class="field"><label>补充说明</label><input data-k="sub" value="合影留念"></div><div class="field" style="flex:0 0 68px;display:flex;align-items:flex-end"><button class="del" data-del="6" type="button">删除</button></div></div></div><div class="item" data-i="7"><div class="row2"><div class="field"><label>时间</label><input data-k="t" value="21:00"></div><div class="field"><label>环节名称</label><input data-k="name" value="结束退场"></div></div><div class="row2"><div class="field"><label>补充说明</label><input data-k="sub" value=""></div><div class="field" style="flex:0 0 68px;display:flex;align-items:flex-end"><button class="del" data-del="7" type="button">删除</button></div></div></div></div>
     <button class="add-btn" id="addFlow" type="button">＋ 添加一个环节</button>
   </div>
 
@@ -764,5 +760,6 @@
   fillPanel();
 })();
 </script>
-</body>
-</html>
+
+
+<script type="application/json" id="boot-state">{"theme":"ink","eyebrow":"2026 · 天文地理爱好者协会","title":"邀请函","motto":"山河为卷　星月为凭","openText":"轻触开启","salute":"尊敬的老师：","body":["您好！","第八届地理文化周决赛即将举行。地理之学，在山川之间，也在少年眼底的星光里。","本届决赛由天文地理爱好者协会承办，涵盖诗朗诵、地理知识抢答、话剧展演、PPT 演讲与合唱等环节。我们谨代表全体同学，诚挚邀请您莅临现场，担任评委，为参赛选手打分、点评，与我们一同见证这场关于山河与热爱的盛会。","期待您的到来。"],"time":"12 月 5 日（周六）18:00 — 21:00","timeNote":"请于 18:00 签到入场","place":"逸夫楼报告厅","placeNote":"","contact":"天文地理爱好者协会","contactNote":"如需调整时间，请随时回复告知","flow":[{"t":"18:30","name":"开场、介绍评委嘉宾","sub":"主持人宣布活动开始"},{"t":"18:37","name":"诗朗诵《星月揽天地，山河耀中华》","sub":"10 分钟"},{"t":"18:52","name":"地理知识抢答赛","sub":"两支队伍同场抢答"},{"t":"19:42","name":"话剧《领养日》","sub":"20 分钟"},{"t":"20:07","name":"PPT 演讲决赛","sub":"5 位选手，每人 5 分钟"},{"t":"20:32","name":"大合唱《夜空中最亮的星》","sub":"8 分钟"},{"t":"20:40","name":"评委点评与颁奖","sub":"合影留念"},{"t":"21:00","name":"结束退场","sub":""}],"reply":"若您当日时间不便，烦请回复告知，我们会及时调整安排。","copyBtn":"复制确认文案","copyText":"已收到天文地理爱好者协会的决赛邀请，12 月 5 日 18:30 可到场参加，谢谢！","seal":"天文地理爱好者协会","sign":"天文地理爱好者协会\n2026 年 12 月","end":"山 河 有 信"}</script></body></html>
